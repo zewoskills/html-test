@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формула 1 — моя любимая тема</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">🏎️ Мир Формулы 1</div>
+        <nav class="nav">
+            <a href="#intro">О спорте</a>
+            <a href="#drivers">Пилоты</a>
+            <a href="#reasons">Почему смотреть</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button">🌙 Тёмная тема</button>
+    </header>
+
+    <main>
+        <section class="hero" id="intro">
+            <div class="hero-text">
+                <h2>Что такое Формула 1</h2>
+                <p>
+                    Формула 1 — это высший класс автогонок, в котором лучшие пилоты мира
+                    соревнуются на болидах, разработанных инженерами команд специально
+                    для достижения максимальной скорости и управляемости. Сезон состоит
+                    из серии гонок Гран-при, которые проходят на трассах по всему миру.
+                </p>
+                <p>
+                    Каждая команда стремится не только выиграть гонку, но и получить
+                    преимущество за счёт технологий: аэродинамики, силовых установок
+                    и стратегии пит-стопов.
+                </p>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAOE7Xl7U7_xiK8M7tgfPnQMmrv-5nnBmOndlG7viWKA&s=10"
+                 alt="Гоночный болид Формулы 1 на трассе"
+                 class="hero-image">
+        </section>
+
+        <h2>Легендарные пилоты</h2>
+        <div class="cards-container" id="drivers">
+            <div class="card">
+                <h3>Айртон Сенна</h3>
+                <p>
+                    Один из самых талантливых пилотов в истории спорта, известный
+                    своим мастерством вождения в дождь и невероятной скоростью на
+                    круге в квалификации.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Михаэль Шумахер</h3>
+                <p>
+                    Семикратный чемпион мира, который на долгие годы задал новый
+                    стандарт физической подготовки и профессионализма в паддоке.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Льюис Хэмилтон</h3>
+                <p>
+                    Рекордсмен по количеству побед и поул-позиций, символ новой
+                    эпохи Формулы 1 и активный борец за разнообразие в спорте.
+                </p>
+            </div>
+        </div>
+
+        <h2>Почему стоит смотреть Формулу 1</h2>
+        <section class="reasons" id="reasons">
+            <p>
+                Даже если вы не разбираетесь в технической стороне вопроса,
+                Формула 1 привлекает драматичными обгонами, непредсказуемой
+                погодой и борьбой характеров между пилотами и командами.
+                Каждый уик-энд гонки — это отдельная история со своим
+                напряжением и неожиданными поворотами сюжета.
+            </p>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <p>Сделано с любовью к автоспорту © 2026</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('themeToggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const isDark = body.classList.contains('dark-theme');
+            toggleButton.textContent = isDark ? '☀️ Светлая тема' : '🌙 Тёмная тема';
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Header</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <header class="site-header">
+  <div class="logo">Моя тема</div>
+  <nav class="nav">
+    <a href="#">Главная</a>
+    <a href="#">Факты</a>
+    <a href="#">Контакты</a>
+  </nav>
+</header>
+
+<div class="cards">
+  <div class="card">Карточка 1</div>
+  <div class="card">Карточка 2</div>
+  <div class="card">Карточка 3</div>
+</div>
+
+ <header class="site-header">
+    <div class="logo">
+      <div class="logo-box"></div>
+      <span>Моя тема</span>
+    </div>
+    <nav class="nav">
+      <a href="#">Главная</a>
+      <a href="#">Факты</a>
+      <a href="#">Контакты</a>
+    </nav>
+  </header> 
+
+</body>
+</html> -->

@@ -1,0 +1,345 @@
+/* Общее оформление страницы */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222222;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #e10600;
+    border-bottom: 2px solid #e10600;
+    padding-bottom: 5px;
+}
+
+/* 1. Шапка сайта: логотип слева, меню справа, на одной высоте */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15151e;
+    padding: 16px 30px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+}
+
+.nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #e10600;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 2. Первый экран: текст и картинка рядом, выровнены по вертикали */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+/* 3. flex: 1 — текст и картинка делят пространство поровну */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text p {
+    line-height: 1.6;
+}
+
+.hero-image {
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #e10600;
+}
+
+/* Контейнер с карточками пилотов — flex-раскладка */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Отдельная карточка пилота */
+.card {
+    background-color: #ffffff;
+    flex: 1;
+    min-width: 220px;
+    max-width: 260px;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 4. hover + transition для карточек */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.card h3 {
+    color: #15151e;
+    margin-top: 0;
+}
+
+/* Блок с причинами смотреть Формулу 1 */
+.reasons {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+/* Селектор по id */
+#site-footer {
+    background-color: #15151e;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 5. Медиазапрос: на ширине телефона всё в колонку */
+@media (max-width: 700px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #3b5bfd;
+  border-radius: 14px;
+  color: #fff;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  flex: 1;
+  background: #cfc9bd;
+  padding: 50px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
+
+
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 36px;
+  background: #0347f3;
+  border-radius: 14px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.logo-box {
+  width: 40px;
+  height: 40px;
+  background: #3b5bfd;
+  border-radius: 10px;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+} */
